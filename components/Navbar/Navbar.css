@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: #6D7993;
+    color: white;
+}
+
+.logo{
+    font-size: 28px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    width: 75%;
+}
+
+.home,
+.signup,.balance,.transfer,.account{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+@media(max-width: 780px)
+{
+    .logo{
+        display: flex;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        font-size: 20px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links-mobile{
+        position: absolute;
+        display: block;
+        list-style: none;
+        background-color: #6D7993;
+        left: 0;
+        top: 75px;
+        transition: all 0.5s ease-out;
+        width: 100%;
+    }
+
+    .home,.account,.balance,.signup,.transfer{
+        color: white;
+        text-align: center;
+        padding: 32px;
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
+    .signup{
+        border: none;
+    }
+
+    .mobile-menu-icon{
+        display: block;
+        position: absolute;
+        font-size: 24px;
+        color: white;
+        background-color: #6D7993;
+        border: none;
+        outline: none;
+        top: 18px;
+        right: 25px;
+    }
+}

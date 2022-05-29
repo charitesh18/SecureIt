@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.homepage{
+    text-align: center;
+    background-color: #9099A2;
+    height: 400px;
+    width: 500px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+h1{
+    padding-top: 10px;
+}
+
+.head{
+    margin-top: 100px;
+}
+h3{
+    margin-left: 80px
+}
